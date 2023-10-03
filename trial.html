@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>nav bar</title>
+            <style>
+
+                *{
+                    margin: 0px;
+                    padding: 0px;
+                   font-family: Arial, Helvetica, sans-serif;
+                }
+                
+                #navbar{
+                    display: flex;
+                    width:100%;
+                    height: 50px;
+                    background:rgb(141, 241, 238) ;
+                    justify-content: space-between;    
+                    align-items: center;           
+                }
+                .menu{
+                    margin-right: 60px;
+                }
+                .menu ul{
+                    list-style: none;
+                    display: inline;
+                }
+                .menu li{
+                    display: inline;
+                    padding-left: 20px;
+                }
+                .logo{
+                    margin-left: 60px;
+                }
+
+                  .hero{
+                    display: flex;
+                    
+                    height: 500px;
+                    
+                    
+                    
+                }
+                .left{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: center;
+                    height: 100%;
+                    width: 50%;
+                    background: rgb(110, 149, 110);
+                    padding: 50px;
+                
+                }
+                .right{
+                    height: 100%;
+                    width: 50%;
+                    background: rgb(121, 134, 173);
+                    text-align: center;
+                    font-size:50px;
+                    padding:50px;
+                    
+                }
+
+
+                .tbdr{
+                    border: 5px solid red;
+                }
+            @media (max-width:600px) {
+                .hero{
+                    display: flex;
+                    
+                    
+                    
+                }
+                .left{
+                    width: 100%;
+                }
+                .right{
+                    width: 100%;
+                }
+            }
+            .btn{
+                color:#fff;
+                text-decoration: none;
+                background:black;
+               height:25px;
+               width:50px;
+                
+            }
+
+            </style>
+         
+        </head>
+        <body>
+        
+            <nav id="navbar">
+         
+             <div class="logo">
+                <h1>ARBWORLD</h1>
+             </div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                    
+                </ul>
+                <button class="btn">Search</button>
+            </div>
+            </nav>
+            
+            <div class="hero">
+                <div class="left ">
+                   <img src="./img/images (3).jpg" alt="sidhu moosewala">
+                   <button><a href="index.html">Back</a></button>
+                  
+                  
+                </div>
+                <div class="right ">
+                 DIL DA NI MADA 
+                                    TERA  SIDHU MOOSEWALA 
+                   
+                </div>
+            </div>
+        </body>
+</html>

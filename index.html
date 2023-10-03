@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>html css menu</title>
+    <style>
+        *{
+              
+               margin:0px;
+        }
+    body{
+        background-image:url(./img/v880-kul-09-a.jpg);
+        font-size: 0.8em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .headernav{
+    width:100%;
+    height:50px;
+    background:#55555a;
+    
+    
+
+
+ }
+.headernav > ul{
+    list-style: none;
+    
+}
+
+
+
+.headernav > ul > li > a {
+    display: inline-block;
+   
+    color: #fff;
+    padding:19px;
+    height:12px;
+    line-height:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:.8em;
+    float: left;
+    text-decoration: none;
+}
+.headernav > ul > li:hover > a {
+    background:#ff6347 ;
+    
+}
+
+
+.active{
+    background: #ff6347;
+}
+.ufoimg{
+    background-image: url(./img/ufo.png);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 0px 15px;
+
+    
+}
+
+.submenu{
+   
+   
+   display: none;
+    position: absolute;
+    top: 50px;
+    left:150px;
+    list-style: none;
+   padding: 0px;
+}
+.submenu > li > a {
+    text-decoration: none;
+  
+    color:#55555a;
+  
+    height: 60px;
+    background-color:#fff;
+    display: block;
+    padding-left: 26px;
+    line-height: 60px;
+    width: 224px;
+
+    
+}
+.menu > li > .submenu >li > a:hover {
+    background: #ff6347;
+    color: #fff;
+   
+}
+.menu > li{
+    position: relative;
+}
+
+  .submenu .anchor{
+    float: right;
+    line-height:60px;
+    margin-right: 30px;
+  }  
+  .submenu1{
+    background:#fff;
+    position: absolute;
+    list-style: none;
+   width:250px;
+   height: 300px;
+  padding-left: 0px; 
+   
+   left: 250px;
+ top: 60px;
+
+
+
+
+
+  }
+  .submenu1 > li > a  {
+    text-decoration: none;
+
+    color:#55555a;
+    height: 60px;
+    background-color:#fff;
+    display: block;
+    padding-left:26px;
+    line-height: 60px;
+    width:224px;
+
+    
+}
+
+.menu  li:hover > .submenu{
+    display: block;
+}
+.menu li:hover > a{
+    background: #ff6347;
+    color: #fff;
+
+}
+.submenu2{
+    height:240px;
+    margin-top: 60px;
+}
+.para{
+    position: absolute;
+    bottom: 0px;
+    color:#ff6347;
+    font-size:2em;
+    left:400px;
+}
+
+
+
+   
+    
+    
+    
+    
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="headernav">
+        <ul class="menu">
+            <li>
+                <a href="#" class="ufoimg">ARBKAIF</a>
+            </li>
+            <li>
+                <a class=" active" href="#" >Active</a>
+            </li>
+            <li>
+                <a href="#">Drop Down <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="submenu">
+                   <li><a href="#">Item one</a> </li>
+                   <li><a href="#">Items right side <i class="fa-solid fa-chevron-right anchor"></i></a> 
+                   <ul class="submenu submenu1">
+                       <li><a href="#">Level 1 </i></a>
+                       
+                          </li>
+                       <li><a href="#">Level 2</a>
+                       
+                              </li>
+                       <li><a href="#">Level 3<i class="fa-solid fa-chevron-right anchor"></i></a>
+                        <ul class="submenu submenu1 ">
+                            <li><a href="trial.html">ARBAAZ </i></a></li>
+                            <li><a href="#">KHAN</a></li>
+                            <li><a href="#">KAIF</a></li>
+                            <li><a href="#">KHAN</a></li>
+                            
+                          </ul>
+                        </li>
+                       
+                               </li>
+                       <li><a href="#">Level 4</i></a>
+                      
+                              </li>
+                       <li><a href="#">Level 5</i></a>
+                       
+                              </li>
+                       </ul>
+                    </li>
+                   <li><a href="#">Item 2</a> </li>
+                   <li><a href="#">Item 4</a> </li>
+                   <li><a href="#">Item left side </a> </li>
+                      </ul>
+
+            </li>
+            <li>
+                <a href="#">Mega Menu <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+                <a href="#">Grid <i class="fa-solid fa-chevron-down"></i></a>   <ul class="submenu">
+                    <li><a href="#">Item one</a> </li>
+                    <li><a href="#">Items right side <i class="fa-solid fa-chevron-right anchor"></i></a> 
+                    <ul class="submenu submenu1">
+                        <li><a href="#">Level 1 </i></a>
+                        
+                           </li>
+                        <li><a href="#">Level 2</a>
+                        
+                               </li>
+                        <li><a href="#">Level 3<i class="fa-solid fa-chevron-right anchor"></i></a>
+                         <ul class="submenu submenu1 submenu2">
+                             <li><a href="trial.html">ARBAAZ </i></a></li>
+                             <li><a href="#">KHAN</a></li>
+                             <li><a href="#">KAIF</a></li>
+                             <li><a href="#">KHAN</a></li>
+                             
+                           </ul>
+                         </li>
+                        
+                                </li>
+                        <li><a href="#">Level 4</i></a>
+                       
+                               </li>
+                        <li><a href="#">Level 5</i></a>
+                        
+                               </li>
+                        </ul>
+                     </li>
+                    <li><a href="#">Item 2</a> </li>
+                    <li><a href="#">Item 4</a> </li>
+                    <li><a href="#">Item left side </a> </li>
+                       </ul>
+            </li>
+            <li>
+                <a href="#">Tab Bar <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+                <a href="#">Images <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li>
+                <a href="#">Contact <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+        </ul>
+
+
+    </nav>
+  <p class="para">Website under working by Arbaaz khan</p>
+
+    
+</body>
+</html>
